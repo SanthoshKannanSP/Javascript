@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #4C6085;
+}
+
+/* Container */
+.container {
+    max-width: 80vw;
+    margin: 4rem auto;
+    background-color: #F3F3F3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container > h1 {
+    text-align: center;
+    color: #250001;
+}
+
+/* Input Section */
+.input-section{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input-section > * {
+    padding: 0.5rem 0.9rem;
+}
+
+#input-bar {
+    max-width: 60ch;
+    width: 100%;
+}
+
+.add-btn {
+    background-color: #39A0ED;
+    color: #32322C;
+    cursor: pointer;
+    border-radius: 5px;
+    border-width: 0;
+    box-shadow:
+        rgba(45, 35, 66, 0.2) 0 2px 4px,
+        rgba(45, 35, 66, 0.15) 0 7px 13px -3px;
+    transition:
+        box-shadow 0.15s,
+        transform 0.15s;
+}
+
+.add-btn:focus {
+    box-shadow:
+        rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px;
+}
+
+.add-btn:hover {
+    box-shadow:
+        rgba(45, 35, 66, 0.3) 0 4px 8px,
+        rgba(45, 35, 66, 0.2) 0 7px 13px -3px;
+    transform: translateY(-2px);
+}
+
+.add-btn:active {
+    transform: translateY(2px);
+}
+
+/* Todo Display Section */
+.todo-display-section {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+}
+
+.todo-display-section > * {
+    padding-left: 0.8rem;
+}
+
+#active-section {
+    border-right: 1px solid #13C4A3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#completed-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.task-card {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.4rem;
+    justify-content: space-between;
+}
+
+.task-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    word-break: break-all;
+}
+
+.task-card input[type="checkbox"] {
+    display: none;
+}
+
+.unchecked-icon, .checked-icon {
+    display: none;
+}
+
+#active-section .unchecked-icon,
+#completed-section .checked-icon {
+    display: block;
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+/* Hiding template elements */
+.template-task-card {
+    display: none;
+}
+
+/* Responsive handling */
+@media (max-width: 720px) {
+    .container {
+        padding: 0.6rem;
+    }
+
+    .container > h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    .todo-display-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #active-section {
+        padding-bottom: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #13C4A3;
+    }
+
+    #active-section h2 {
+        font-size: 1rem;
+    }
+
+    #completed-section h2 {
+        font-size: 1rem;
+    }
+
+    .task-content {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>To-Do Application</h1>
+            <div class="input-section">
+                <input type="text" name="input-bar" id="input-bar" placeholder="Enter the task...">
+                <button class="add-btn" onclick="addTask()">Add Task</button>
+            </div>
+            <div class="todo-display-section">
+                <div id="active-section">
+                    <h2>Active To-Dos</h2>
+                </div>
+                <div id="completed-section">
+                    <h2>Completed To-Dos</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div data-type="template-task-card" class="task-card" style="display: none;">
+        <label class="task-content">
+            <span class="unchecked-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -960 960 960"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120zm0-80h560v-560H200z"/></svg>
+            </span>
+            <span class="checked-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -960 960 960"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q8 0 15 1.5t14 4.5l-74 74H200v560h560v-266l80-80v346q0 33-23.5 56.5T760-120zm261-160L235-506l56-56 170 170 367-367 57 55z"/></svg>
+            </span>
+            <h3 class="task-title"></h3>
+        </label>
+        <span class="delete-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -960 960 960"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120zm400-600H280v520h400zM360-280h80v-360h-80zm160 0h80v-360h-80zM280-720v520z"/></svg>
+        </span>
+        <input type="checkbox" name="completed-check">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
