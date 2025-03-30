@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Image Gallery</h1>
+    </header>
+    <main>
+      <div class="gallery">
+        <img src="images/image1.jpg" class="thumbnail" />
+        <img src="images/image2.jpg" class="thumbnail" />
+        <img src="images/image3.jpg" class="thumbnail" />
+        <img src="images/image4.jpg" class="thumbnail" />
+        <img src="images/image5.jpg" class="thumbnail" />
+        <img src="images/image6.jpg" class="thumbnail" />
+      </div>
+
+      <div class="modal" id="modal">
+        <span class="close-icon" id="close-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100%"
+            height="100%"
+            viewBox="0 -960 960 960"
+          >
+            <path
+              fill="#ffffff"
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224z"
+            />
+          </svg>
+        </span>
+        <img id="modal-img" src="" />
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
