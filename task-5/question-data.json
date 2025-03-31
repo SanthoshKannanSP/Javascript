@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "correct_answer": "Paris",
+    "feedback": {
+      "Berlin": "Incorrect. Berlin is the capital of Germany.",
+      "Madrid": "Incorrect. Madrid is the capital of Spain.",
+      "Paris": "Correct! Paris is the capital of France.",
+      "Rome": "Incorrect. Rome is the capital of Italy."
+    }
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "options": ["Harper Lee", "J.K. Rowling", "Ernest Hemingway", "Mark Twain"],
+    "correct_answer": "Harper Lee",
+    "feedback": {
+      "Harper Lee": "Correct! Harper Lee wrote 'To Kill a Mockingbird'.",
+      "J.K. Rowling": "Incorrect. J.K. Rowling wrote the Harry Potter series.",
+      "Ernest Hemingway": "Incorrect. Ernest Hemingway wrote 'The Old Man and the Sea'.",
+      "Mark Twain": "Incorrect. Mark Twain wrote 'The Adventures of Tom Sawyer'."
+    }
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correct_answer": "Jupiter",
+    "feedback": {
+      "Earth": "Incorrect. Earth is the fifth largest planet.",
+      "Mars": "Incorrect. Mars is much smaller than Jupiter.",
+      "Jupiter": "Correct! Jupiter is the largest planet in our solar system.",
+      "Saturn": "Incorrect. Saturn is the second largest planet."
+    }
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": [
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Michelangelo"
+    ],
+    "correct_answer": "Leonardo da Vinci",
+    "feedback": {
+      "Vincent van Gogh": "Incorrect. Vincent van Gogh painted 'Starry Night'.",
+      "Pablo Picasso": "Incorrect. Pablo Picasso is known for his cubist works.",
+      "Leonardo da Vinci": "Correct! Leonardo da Vinci painted the Mona Lisa.",
+      "Michelangelo": "Incorrect. Michelangelo painted the Sistine Chapel ceiling."
+    }
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Ag", "Au", "Fe", "Pt"],
+    "correct_answer": "Au",
+    "feedback": {
+      "Ag": "Incorrect. Ag is the symbol for silver.",
+      "Au": "Correct! Au is the symbol for gold.",
+      "Fe": "Incorrect. Fe is the symbol for iron.",
+      "Pt": "Incorrect. Pt is the symbol for platinum."
+    }
+  }
+]

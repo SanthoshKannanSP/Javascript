@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efd6ac;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/* Quiz Container */
+.quiz-container {
+  background-color: #ffffff;
+  width: 80vw;
+  padding: 2rem;
+}
+
+/* Quiz Section */
+.quiz-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.question-text {
+  text-align: center;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.answer-button {
+  padding: 1rem;
+  background-color: #ffbc95;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-button.disabled {
+  cursor: default;
+}
+
+/* Result Section */
+.result-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.result-text {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.result-text.correct-answer {
+  background-color: rgb(163, 255, 203);
+  border: 1px solid green;
+}
+
+.result-text.wrong-answer {
+  background-color: rgb(255, 155, 155);
+  border: 1px solid red;
+}
+
+.next-button {
+  padding: 1rem;
+  background-color: rgb(154, 208, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Final Score Section */
+.score-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Responsive Handling */
+@media (max-width: 640px) {
+  .question-text {
+    font-size: 1.2rem;
+  }
+  .answer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .answer-button {
+    font-size: 0.9rem;
+  }
+
+  .result-section {
+    font-size: 0.9rem;
+    flex-direction: column;
+  }
+
+  .score-text {
+    font-size: 1.2rem;
+  }
+}
