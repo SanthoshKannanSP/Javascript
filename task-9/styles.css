@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: fit-content;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.avatar {
+    width: 250px;
+}
+
+@media (max-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
